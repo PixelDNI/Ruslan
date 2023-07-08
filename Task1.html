@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #L {
+            color: white;
+            background-color: lightblue;
+            width: 80px;
+            height: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p> <input type='button' onclick='fillData()' id="L" value='LIKE'> </p>
+
+    <div id='container'>
+        <p>
+            0
+        </p>
+    </div>
+</body>
+<script>
+    let a = 0
+    let fillData = () => {
+        let ele = document.getElementById('container');
+        a += 1
+        ele.innerHTML = a;
+    }
+</script>
+</body>
+
+</html>
